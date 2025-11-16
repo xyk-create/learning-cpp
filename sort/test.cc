@@ -8,7 +8,7 @@ int main()
     std::vector<int> arr(SIZE);
     for (int i = 0; i < arr.size(); i++)
         arr[i] = rand() % 1000;
-    my_sort::sort(arr, 0, arr.size()-1);
+    my_sort::sort2(arr,0,arr.size()-1);
     for (int i = 0; i < arr.size(); i++)
     {
         std::cout << arr[i] << " ";
