@@ -8,7 +8,11 @@ int main()
     std::vector<int> arr(SIZE);
     for (int i = 0; i < arr.size(); i++)
         arr[i] = rand() % 1000;
-    my_sort::sort2(arr,0,arr.size()-1);
+    //my_sort::sort2(arr,0,arr.size()-1);
+    //my_sort::merge_sort(arr,0,arr.size()-1);
+    //my_sort::shell_sort(arr);
+    //my_sort::heap_sort(arr);
+    my_sort::count_sort(arr);
     for (int i = 0; i < arr.size(); i++)
     {
         std::cout << arr[i] << " ";
